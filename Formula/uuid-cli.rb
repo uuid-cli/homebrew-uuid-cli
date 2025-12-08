@@ -3,12 +3,22 @@ class UuidCli < Formula
   homepage "https://github.com/guzhongren/uuid-cli"
   license "MIT"
 
-  if Hardware::CPU.intel?
-    url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-x86_64-apple-darwin.tar.gz"
-    sha256 "d441edee441327130e35fd75e3a2845823e6b18353789f3517571331abaae593"
-  elsif Hardware::CPU.arm?
-    url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-aarch64-apple-darwin.tar.gz"
-    sha256 "910ce29cb95d635a4417f7657d1829b70514db081b7e1c40da77b0c88555d9bb"
+  if OS.mac?
+    if Hardware::CPU.intel?
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d441edee441327130e35fd75e3a2845823e6b18353789f3517571331abaae593"
+    elsif Hardware::CPU.arm?
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "910ce29cb95d635a4417f7657d1829b70514db081b7e1c40da77b0c88555d9bb"
+    end
+  elsif OS.linux?
+    if Hardware::CPU.intel?
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a6069fb839b6de038a0b24440ad6b0013f57b4454a1dc77f58eca282510f4ced"
+    elsif Hardware::CPU.arm?
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5d89f7812194a25bc6785c45e19a001b8dd8189005a92f1db856c36ad6969b48"
+    end
   end
 
   def install
