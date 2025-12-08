@@ -4,11 +4,11 @@ class UuidCli < Formula
   license "MIT"
 
   if Hardware::CPU.intel?
-    url "https://github.com/guzhongren/uuid-cli/releases/download/v0.1.0/uuid-cli-v0.1.0-x86_64-apple-darwin.tar.gz"
-    sha256 "c4d8ea9c18da39febc8f7593c592c2c86e0f73c4f62c228bbc568f3c4accafef"
+    url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-x86_64-apple-darwin.tar.gz"
+    sha256 "d441edee441327130e35fd75e3a2845823e6b18353789f3517571331abaae593"
   elsif Hardware::CPU.arm?
-    url "https://github.com/guzhongren/uuid-cli/releases/download/v0.1.0/uuid-cli-v0.1.0-aarch64-apple-darwin.tar.gz"
-    sha256 "e656f5f99f70b6b743b0dd7e8acbf177d76b5744700b85d5b5cba87fd4cd7957"
+    url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-aarch64-apple-darwin.tar.gz"
+    sha256 "910ce29cb95d635a4417f7657d1829b70514db081b7e1c40da77b0c88555d9bb"
   end
 
   def install
