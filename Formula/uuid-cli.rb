@@ -5,19 +5,19 @@ class UuidCli < Formula
 
   if OS.mac?
     if Hardware::CPU.intel?
-      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "d441edee441327130e35fd75e3a2845823e6b18353789f3517571331abaae593"
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.1.1/uuid-cli-v1.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "412db63016f912eee0d79b6dfa4e273833977d87901714940c0a25e309178c3f"
     elsif Hardware::CPU.arm?
-      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "910ce29cb95d635a4417f7657d1829b70514db081b7e1c40da77b0c88555d9bb"
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.1.1/uuid-cli-v1.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "2888f91b2d5ce1918a1b18a23fc48d90e9e7992e1e0204c274f9339020987e39"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a6069fb839b6de038a0b24440ad6b0013f57b4454a1dc77f58eca282510f4ced"
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.1.1/uuid-cli-v1.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "08a1f8dbe8cf0db2988da5d3a15e6ed48236b99b935ff0fe4b2331ebbf0edf66"
     elsif Hardware::CPU.arm?
-      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.0.0/uuid-cli-v1.0.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5d89f7812194a25bc6785c45e19a001b8dd8189005a92f1db856c36ad6969b48"
+      url "https://github.com/guzhongren/uuid-cli/releases/download/v1.1.1/uuid-cli-v1.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6de4b6f6956ed53968ced00f4cc72f55b9a453b5db790b9144cd566148344fce"
     end
   end
 
