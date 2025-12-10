@@ -6,9 +6,9 @@ uuid cli for homebrew
 ```sh
 # If failure to install the latest version
 # brew uninstall uuid-cli
-# brew untap guzhongren/uuid-cli
+# brew untap uuid-cli/uuid-cli
 
-brew tap guzhongren/uuid-cli
+brew tap uuid-cli/uuid-cli
 brew install uuid-cli
 
 # Test
